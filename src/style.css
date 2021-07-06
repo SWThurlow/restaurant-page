@@ -3,11 +3,11 @@
 }
 
 /*rgba(255, 196, 0, 0.85);*/
-
 body {
     background: url('./imgs/about.jpg');
     background-size: 100vw 100vh;
 }
+
 /*Navigation*/
 nav {
     width: 100%;
@@ -35,7 +35,6 @@ nav ul li:hover {
 }
 
 /*Commonly used.*/
-
 h1 {
     margin: 2vh 0;
     font-size: 40px;
@@ -87,4 +86,10 @@ p {
     font-weight: 400;
     text-align: center;
     color: #000;
+}
+
+/*Contact*/
+.contentText {
+    width: 90vw;
+    margin: 0 auto;
 }

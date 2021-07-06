@@ -10,6 +10,7 @@ export default function about() {
     content.appendChild(weMake);
 
     const ought = document.createElement('p');
+    ought.classList.add('contentText')
     ought.textContent = `We ought to we've been making it longer than we can remember.`;
     content.appendChild(ought);
 
