@@ -108,6 +108,10 @@ p {
 
 /*Contact*/
 .contentText {
-    width: 90vw;
+    width: 90%;
     margin: 0 auto;
+}
+
+.contacts {
+    line-height: 40px;
 }
