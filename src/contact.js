@@ -1,6 +1,6 @@
 export default function contact(){
     const content = document.createElement('div');
-    content.setAttribute('id', 'content');
+    content.setAttribute('class', 'content');
 
     const h2 = document.createElement('h2');
     h2.textContent = 'Contact Us';

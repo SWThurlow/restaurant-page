@@ -1,5 +1,5 @@
 /*Scripts for links*/
-import about from './about.js';
+import home from './home.js';
 import menu from './menu.js';
 import contact from './contact.js';
 
@@ -16,20 +16,20 @@ export default function navigation() {
   const navList = document.createElement('ul')
   nav.appendChild(navList);
   
-  const aboutLink = document.createElement('li');
-  aboutLink.textContent = 'About Us';
-  aboutLink.addEventListener('click', () => {
-    let content = document.getElementById('content');
+  const homeLink = document.createElement('li');
+  homeLink.textContent = 'Home';
+  homeLink.addEventListener('click', () => {
+    let content = document.querySelector('.content');
     document.body.removeChild(content);
 
-    document.body.appendChild(about());
+    document.body.appendChild(home());
   });
-  navList.appendChild(aboutLink);
+  navList.appendChild(homeLink);
 
   const menuLink = document.createElement('li');
-  menuLink.textContent = 'Our Menu';
+  menuLink.textContent = 'Menu';
   menuLink.addEventListener('click', () => {
-    let content = document.getElementById('content');
+    let content = document.querySelector('.content');
     document.body.removeChild(content);
 
     document.body.appendChild(menu());
@@ -37,9 +37,9 @@ export default function navigation() {
   navList.appendChild(menuLink);
 
   const contactLink = document.createElement('li');
-  contactLink.textContent = 'Contact Us';
+  contactLink.textContent = 'Contact';
   contactLink.addEventListener('click', () => {
-    let content = document.getElementById('content');
+    let content = document.querySelector('.content');    
     document.body.removeChild(content);
 
     document.body.appendChild(contact());
