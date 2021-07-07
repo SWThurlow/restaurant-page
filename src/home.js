@@ -22,7 +22,7 @@ export default function home() {
 
     const delivery = document.createElement('p');
     delivery.classList.add('homeText')
-    delivery.textContent = `Call us with your order or feel free to visit.`;
+    delivery.textContent = `Call us with your order or feel free to visit us.`;
     content.appendChild(delivery);
     
     return content;
