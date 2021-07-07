@@ -35,8 +35,11 @@ nav ul li {
     color: var(--font-colour);
     cursor: pointer;
 }
+
 nav ul li:hover {
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
 }
 
 /*Commonly used.*/
