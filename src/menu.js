@@ -2,10 +2,6 @@ export default function menu() {
     const content = document.createElement('div');
     content.setAttribute('class', 'content');
 
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Menu';
-    content.appendChild(h2);
-
     const menu = document.createElement('section');
     menu.classList.add('menu');
     content.appendChild(menu);
@@ -40,7 +36,7 @@ export default function menu() {
         const container = document.createElement('div');
         container.classList.add('menuItem')
 
-        const title = document.createElement('h3');
+        const title = document.createElement('h2');
         title.textContent = pizza.title;
         container.appendChild(title);
 

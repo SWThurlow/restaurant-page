@@ -15,13 +15,13 @@ export default function navigation() {
   
   const navList = document.createElement('ul')
   nav.appendChild(navList);
-  
+
   const homeLink = document.createElement('li');
   homeLink.textContent = 'Home';
+  homeLink.classList.add('current');
   homeLink.addEventListener('click', () => {
     let content = document.querySelector('.content');
     document.body.removeChild(content);
-
     document.body.appendChild(home());
   });
   navList.appendChild(homeLink);
@@ -31,7 +31,6 @@ export default function navigation() {
   menuLink.addEventListener('click', () => {
     let content = document.querySelector('.content');
     document.body.removeChild(content);
-
     document.body.appendChild(menu());
   });
   navList.appendChild(menuLink);
@@ -41,7 +40,6 @@ export default function navigation() {
   contactLink.addEventListener('click', () => {
     let content = document.querySelector('.content');    
     document.body.removeChild(content);
-
     document.body.appendChild(contact());
   });
   navList.appendChild(contactLink);
